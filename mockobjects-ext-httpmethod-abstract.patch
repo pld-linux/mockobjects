@@ -1,0 +1,11 @@
+--- mockobjects-HEAD/src/extensions/com/mockobjects/apache/commons/httpclient/MockHttpMethod.java	2003-06-18 14:52:31.000000000 +0100
++++ mockobjects-0.09/src/extensions/com/mockobjects/apache/commons/httpclient/MockHttpMethod.java	2003-06-18 14:50:54.000000000 +0100
+@@ -7,7 +7,7 @@
+ import java.io.IOException;
+ import java.io.InputStream;
+ 
+-public class MockHttpMethod extends MockMethodHelper implements HttpMethod {
++public abstract class MockHttpMethod extends MockMethodHelper implements HttpMethod {
+ 
+ 
+ 

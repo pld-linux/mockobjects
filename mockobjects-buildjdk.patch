@@ -1,0 +1,16 @@
+Index: build.xml
+===================================================================
+RCS file: /cvsroot/mockobjects/mockobjects-java/build.xml,v
+retrieving revision 1.36
+diff -u -r1.36 build.xml
+--- build.xml	21 May 2003 22:34:20 -0000	1.36
++++ build.xml	18 Jun 2003 10:13:05 -0000
+@@ -248,7 +248,7 @@
+   </target>
+ 
+   <target name="jar-jdk"
+-          depends="deliverable-names"
++          depends="compile-jdk, deliverable-names"
+           description="Generate jdk mockobjects jar">
+     <antcall target="_inner-jar">
+       <param name="jarfile.name"
