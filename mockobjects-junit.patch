@@ -1,0 +1,31 @@
+
+ugly fix for a more uglier problem
+
+compile-core:
+    [javac] Compiling 1 source file to /home/glen/rpm/pld/BUILD/mockobjects-0.09/out/core/classes
+    [javac] /home/glen/rpm/pld/BUILD/mockobjects-0.09/src/core/com/mockobjects/util/AssertMo.java:80: failNotEquals(java.lang.String,java.lang.Object,java.lang.Object) in com.mockobjects.util.AssertMo cannot override failNotEquals(java.lang.String,java.lang.Object,java.lang.Object) in junit.framework.Assert; attempting to assign weaker access privileges; was public
+    [javac]     static protected void failNotEquals(
+    [javac]                           ^
+    [javac] 1 error
+
+
+--- mockobjects-0.09/src/core/com/mockobjects/util/AssertMo.java~	2006-05-11 01:40:09.948315899 +0300
++++ mockobjects-0.09/src/core/com/mockobjects/util/AssertMo.java	2006-05-11 01:41:27.540045972 +0300
+@@ -77,7 +77,7 @@
+         assertTrue("Should not have verified", threwException);
+     }
+ 
+-    static protected void failNotEquals(
++/*    static protected void failNotEquals(
+         String message,
+         Object expected,
+         Object actual) {
+@@ -86,7 +86,7 @@
+             formatted = message + " ";
+         fail(
+             formatted + "\nExpected:<" + expected + ">\nReceived:<" + actual + ">");
+-    }
++    }*/
+ 
+     public static void notImplemented(String mockName) {
+         throw new NotImplementedException("Not Implemented in " + mockName);
