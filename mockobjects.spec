@@ -1,16 +1,17 @@
 %define j2ee12  %{?_with_j2ee12:1}%{!?_without_j2ee12:0}
 %define j2ee13  %{?_with_j2ee13:1}%{!?_without_j2ee13:0}
 Summary:	Java MockObjects package
+Summary(pl):	Pakiet Java MockObjects
 Name:		mockobjects
 Version:	0.09
 Release:	0.1
 License:	BSD Style
 Group:		Development
-URL:		http://www.mockobjects.com/
 Source0:	http://www.mockobjects.com/dist/%{name}-%{version}.tar.gz
 Patch0:		%{name}-buildjdk.patch
 Patch1:		%{name}-ext-httpmethod-abstract.patch
 Patch2:		mockobjects-junit.patch
+URL:		http://www.mockobjects.com/
 BuildRequires:	jakarta-ant
 BuildRequires:	jakarta-ant >= 1.6.1
 BuildRequires:	jakarta-commons-httpclient
@@ -38,8 +39,18 @@ objects. It is based around a set of expectation classes for values
 and collections. There are also various other classes to make mock
 objects easier to write or to use.
 
+%description -l pl
+Projekt Mock Objects to ogólny szkielet testów jednostkowych, którego
+celem jest u³atwienie tworzenia testów jednostkowych w stylu pozornych
+obiektów. Celem projektu jest dostarczenie szkieletu g³ównych obiektów
+pozornych. Jest to biblioteka kodu wspieraj±cego implementowanie
+takich obiektów. Jest oparta na zbiorze klas oczekuj±cych dla warto¶ci
+i kolekcji. Zawiera tak¿e ró¿ne inne klasy u³atwiaj±ce pisanie i
+u¿ywanie obiektów pozornych.
+
 %package jdk1.4
 Summary:	MockObjects for 1.4 JDK
+Summary(pl):	MockObjects dla JDK 1.4
 Group:		Development
 Requires:	%{name} = %{version}-%{release}
 Requires:	/usr/sbin/update-alternatives
@@ -47,20 +58,28 @@ Requires:	java-devel < 1.5
 Requires:	java-devel >= 1.4
 
 %description jdk1.4
-MockObjects specific to JDK 1.4.x
+MockObjects specific to JDK 1.4.x.
+
+%description jdk1.4 -l pl
+MockObjects specyficzne dla JDK 1.4.x.
 
 %package httpclient
 Summary:	MockObjects for Commons HttpClient
+Summary(pl):	MockObjects dla Commons HttpClient
 Group:		Development
 Requires:	%{name} = %{version}-%{release}
 Requires:	/usr/sbin/update-alternatives
 Requires:	jakarta-commons-httpclient
 
 %description httpclient
-MockObjects for Jakarta Commons HttpClient
+MockObjects for Jakarta Commons HttpClient.
+
+%description httpclient -l pl
+MockObjects dla Jakarta Commons HttpClient.
 
 %package alt-httpclient
 Summary:	Mockable API for Commons HttpClient
+Summary(pl):	Mockable API dla Commons HttpClient
 Group:		Development
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-httpclient = %{version}-%{release}
@@ -68,10 +87,14 @@ Requires:	/usr/sbin/update-alternatives
 Requires:	jakarta-commons-httpclient
 
 %description alt-httpclient
-Alternative API for Jakarta Commons HttpClient to allow for testing
+Alternative API for Jakarta Commons HttpClient to allow for testing.
+
+%description alt-httpclient -l pl
+Alternatywne API dla Jakarta Commons HttpClient do testowania.
 
 %package alt-jdk1.4
 Summary:	Mockable API for JDK 1.4
+Summary(pl):	Mockable API dla JDK 1.4
 Group:		Development
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-jdk1.4 = %%{version}-%{release}
@@ -79,10 +102,14 @@ Requires:	java-devel < 1.5
 Requires:	java-devel >= 1.4
 
 %description alt-jdk1.4
-Alternative API for JDK 1.4 to allow for testing
+Alternative API for JDK 1.4 to allow for testing.
+
+%description alt-jdk1.4 -l pl
+Alternatywne API dla JDK 1.4 do testowania.
 
 %package jdk1.4-j2ee1.2
 Summary:	Mockable J2EE API for JDK 1.4 and J2EE 1.2
+Summary(pl):	Mockable J2EE API dla JDK 1.4 i J2EE 1.2
 Group:		Development
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-jdk1.4 = %{version}-%{release}
@@ -90,10 +117,14 @@ Requires:	java-devel < 1.5
 Requires:	java-devel >= 1.4
 
 %description jdk1.4-j2ee1.2
-API for JDK 1.4 to allow testing with J2EE 1.2 mocks
+API for JDK 1.4 to allow testing with J2EE 1.2 mocks.
+
+%description jdk1.4-j2ee1.2 -l pl
+API dla JDK 1.4 do testowania z obiektami J2EE 1.2.
 
 %package jdk1.4-j2ee1.3
 Summary:	Mockable J2EE API for JDK 1.4 and J2EE 1.3
+Summary(pl):	Mockable J2EE API dla JDK 1.4 i J2EE 1.3
 Group:		Development
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-jdk1.4 = %{version}-%{release}
@@ -101,7 +132,10 @@ Requires:	java-devel < 1.5
 Requires:	java-devel >= 1.4
 
 %description jdk1.4-j2ee1.3
-API for JDK 1.4 to allow testing with J2EE 1.3 mocks
+API for JDK 1.4 to allow testing with J2EE 1.3 mocks.
+
+%description jdk1.4-j2ee1.3 -l pl
+API dla JDK 1.4 do testowania z obiektami J2EE 1.3.
 
 %prep
 %setup -q
