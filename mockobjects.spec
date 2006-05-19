@@ -12,8 +12,8 @@ Patch0:		%{name}-buildjdk.patch
 Patch1:		%{name}-ext-httpmethod-abstract.patch
 Patch2:		mockobjects-junit.patch
 URL:		http://www.mockobjects.com/
-BuildRequires:	jakarta-ant
-BuildRequires:	jakarta-ant >= 1.6.1
+BuildRequires:	ant
+BuildRequires:	ant >= 1.6.1
 BuildRequires:	jakarta-commons-httpclient
 BuildRequires:	jdk < 1.5
 BuildRequires:	jdk >= 1.4.0
