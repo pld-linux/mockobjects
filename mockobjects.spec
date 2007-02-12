@@ -1,7 +1,7 @@
 %define j2ee12  %{?_with_j2ee12:1}%{!?_without_j2ee12:0}
 %define j2ee13  %{?_with_j2ee13:1}%{!?_without_j2ee13:0}
 Summary:	Java MockObjects package
-Summary(pl.UTF-8):   Pakiet Java MockObjects
+Summary(pl.UTF-8):	Pakiet Java MockObjects
 Name:		mockobjects
 Version:	0.09
 Release:	0.1
@@ -50,7 +50,7 @@ używanie obiektów pozornych.
 
 %package jdk1.4
 Summary:	MockObjects for 1.4 JDK
-Summary(pl.UTF-8):   MockObjects dla JDK 1.4
+Summary(pl.UTF-8):	MockObjects dla JDK 1.4
 Group:		Development
 Requires:	%{name} = %{version}-%{release}
 Requires:	/usr/sbin/update-alternatives
@@ -65,7 +65,7 @@ MockObjects specyficzne dla JDK 1.4.x.
 
 %package httpclient
 Summary:	MockObjects for Commons HttpClient
-Summary(pl.UTF-8):   MockObjects dla Commons HttpClient
+Summary(pl.UTF-8):	MockObjects dla Commons HttpClient
 Group:		Development
 Requires:	%{name} = %{version}-%{release}
 Requires:	/usr/sbin/update-alternatives
@@ -79,7 +79,7 @@ MockObjects dla Jakarta Commons HttpClient.
 
 %package alt-httpclient
 Summary:	Mockable API for Commons HttpClient
-Summary(pl.UTF-8):   Mockable API dla Commons HttpClient
+Summary(pl.UTF-8):	Mockable API dla Commons HttpClient
 Group:		Development
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-httpclient = %{version}-%{release}
@@ -94,7 +94,7 @@ Alternatywne API dla Jakarta Commons HttpClient do testowania.
 
 %package alt-jdk1.4
 Summary:	Mockable API for JDK 1.4
-Summary(pl.UTF-8):   Mockable API dla JDK 1.4
+Summary(pl.UTF-8):	Mockable API dla JDK 1.4
 Group:		Development
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-jdk1.4 = %%{version}-%{release}
@@ -109,7 +109,7 @@ Alternatywne API dla JDK 1.4 do testowania.
 
 %package jdk1.4-j2ee1.2
 Summary:	Mockable J2EE API for JDK 1.4 and J2EE 1.2
-Summary(pl.UTF-8):   Mockable J2EE API dla JDK 1.4 i J2EE 1.2
+Summary(pl.UTF-8):	Mockable J2EE API dla JDK 1.4 i J2EE 1.2
 Group:		Development
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-jdk1.4 = %{version}-%{release}
@@ -124,7 +124,7 @@ API dla JDK 1.4 do testowania z obiektami J2EE 1.2.
 
 %package jdk1.4-j2ee1.3
 Summary:	Mockable J2EE API for JDK 1.4 and J2EE 1.3
-Summary(pl.UTF-8):   Mockable J2EE API dla JDK 1.4 i J2EE 1.3
+Summary(pl.UTF-8):	Mockable J2EE API dla JDK 1.4 i J2EE 1.3
 Group:		Development
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-jdk1.4 = %{version}-%{release}
