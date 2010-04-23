@@ -16,7 +16,7 @@ URL:		http://www.mockobjects.com/
 BuildRequires:	ant
 BuildRequires:	ant >= 1.6.1
 BuildRequires:	java-commons-httpclient
-BuildRequires:	java-sun
+BuildRequires:	jdk
 BuildRequires:	jdk < 1.5
 BuildRequires:	jdk >= 1.4.0
 BuildRequires:	junit
