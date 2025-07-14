@@ -135,9 +135,9 @@ API dla JDK 1.4 do testowania z obiektami J2EE 1.3.
 
 %prep
 %setup -q
-%patch0
-%patch1 -p1
-%patch2 -p1
+%patch -P0
+%patch -P1 -p1
+%patch -P2 -p1
 
 %build
 # build with (almost) empty CLASSPATH
